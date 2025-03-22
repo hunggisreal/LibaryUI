@@ -1,14 +1,14 @@
 ## Ui Lib
 ```lua
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/hunggchuaii/LibaryUI/refs/heads/main/RedzUI.lua"))()
 ```
 
 ## Window
 ```lua
 local Window = redzlib:MakeWindow({
-  Title = "redz Hub : Blox Fruits",
-  SubTitle = "by redz9999",
-  SaveFolder = "testando | redz lib v5.lua"
+  Title = "Title here",
+  SubTitle = "Sub title here",
+  SaveFolder = "Save folder"
 })
 ```
 
@@ -152,5 +152,3 @@ Tab1:AddTextBox({
   end
 })
 ```
-## Check script 
-![Image Alt](Screenshot_2025-02-13-22-22-32-885_com.roblox.client.vnggames.jpg)
