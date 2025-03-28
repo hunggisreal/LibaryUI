@@ -1,9 +1,9 @@
-## Ui Lib
+## Booting The Libary
 ```lua
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/hunggchuaii/LibaryUI/refs/heads/main/RedzUI.lua"))()
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/hunggisreal/LibaryUI/refs/heads/main/RedzUI.lua"))()
 ```
 
-## Window
+## Create Window
 ```lua
 local Window = redzlib:MakeWindow({
   Title = "Title here",
@@ -11,8 +11,39 @@ local Window = redzlib:MakeWindow({
   SaveFolder = "Save folder"
 })
 ```
+## Tab
+```lua
+local Tab1 = Window:MakeTab({"Um", "cherry"})
+```
+## Start tab
+```lua
+Window:SelectTab(Tab1)
+```
+## Toggle 1
+```lua
+local Toggle1 = Tab1:AddToggle({
+  Name = "Toggle",
+  Description = "This is a <font color='rgb(88, 101, 242)'>Toggle</font> Example",
+  Default = false 
+})
+Toggle1:Callback(function(Value)
+ 
+end)
+```
 
-## Icon 
+
+
+## Toggle 2
+```lua
+Tab1:AddToggle({
+    Name = "Toggle",
+    Default = false,
+    Callback = function(v)
+
+    end
+})
+```
+## Minimize Button
 ```lua
 Window:AddMinimizeButton({
     Button = { Image = "rbxassetid://71014873973869", BackgroundTransparency = 0 },
@@ -30,12 +61,6 @@ Tab1:AddDiscordInvite({
 })
 ```
 
-
-## Tab
-```lua
-local Tab1 = Window:MakeTab({"Um", "cherry"})
-```
-
 ## Set theme
 Dark
 ```lua
@@ -48,10 +73,6 @@ Darkers
 Purple
 ```lua
   redzlib:SetTheme("Purple")
-```
-## Start tab
-```lua
-Window:SelectTab(Tab1)
 ```
 ## Section
 ```lua
@@ -86,33 +107,6 @@ Tab1:AddButton({"Print", function(Value)
 print("Hello World!")
 end})
 ```
-## Toggle 1
-```lua
-local Toggle1 = Tab1:AddToggle({
-  Name = "Toggle",
-  Description = "This is a <font color='rgb(88, 101, 242)'>Toggle</font> Example",
-  Default = false 
-})
-Toggle1:Callback(function(Value)
- 
-end)
-```
-
-
-
-## Toggle 2
-```lua
-Tab1:AddToggle({
-    Name = "Toggle",
-    Default = false,
-    Callback = function(v)
-
-    end
-})
-```
-
-
-
 ## Sliders
 ```lua
 Tab1:AddSlider({
