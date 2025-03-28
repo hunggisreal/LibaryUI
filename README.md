@@ -15,8 +15,7 @@ local Window = redzlib:MakeWindow({
 ```lua
 local Tab1 = Window:MakeTab({"Um", "cherry"})
 ```
-cherry is the name of the icon
-The UI provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
+cherry is the name of the icon in Lucide Icons https://lucide.dev/icons/
 ## Start tab
 ```lua
 Window:SelectTab(Tab1)
