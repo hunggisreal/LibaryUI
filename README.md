@@ -1,9 +1,24 @@
-## Booting The Libary
+## 🚀 Booting The Libary
 ```lua
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/hunggisreal/LibaryUI/refs/heads/main/RedzUI.lua"))()
 ```
-
-## Create Window
+## Discord invite
+```lua
+Tab1:AddDiscordInvite({
+    Name = "Name Hub",
+    Description = "Join server",
+    Logo = "rbxassetid://18751483361",
+    Invite = "Link discord invite",
+})
+```
+## Minimize Button
+```lua
+Window:AddMinimizeButton({
+    Button = { Image = "rbxassetid://71014873973869", BackgroundTransparency = 0 },
+    Corner = { CornerRadius = UDim.new(35, 1) },
+})
+```
+## 🪟 Create Window
 ```lua
 local Window = redzlib:MakeWindow({
   Title = "Title here",
@@ -11,11 +26,10 @@ local Window = redzlib:MakeWindow({
   SaveFolder = "Save folder"
 })
 ```
-## Tab
+## 📑 Tab
 ```lua
 local Tab1 = Window:MakeTab({"Um", "cherry"})
 ```
-cherry is the name of the icon in Lucide Icons https://lucide.dev/icons/
 ## Start tab
 ```lua
 Window:SelectTab(Tab1)
@@ -31,9 +45,6 @@ Toggle1:Callback(function(Value)
  
 end)
 ```
-
-
-
 ## Toggle 2
 ```lua
 Tab1:AddToggle({
@@ -44,24 +55,6 @@ Tab1:AddToggle({
     end
 })
 ```
-## Minimize Button
-```lua
-Window:AddMinimizeButton({
-    Button = { Image = "rbxassetid://71014873973869", BackgroundTransparency = 0 },
-    Corner = { CornerRadius = UDim.new(35, 1) },
-})
-```
-
-## Discord invite
-```lua
-Tab1:AddDiscordInvite({
-    Name = "Name Hub",
-    Description = "Join server",
-    Logo = "rbxassetid://18751483361",
-    Invite = "Link discord invite",
-})
-```
-
 ## Set theme
 Dark
 ```lua
@@ -79,7 +72,6 @@ Purple
 ```lua
 local Section = Tab1:AddSection({"Section"})
 ```
-
 ## Paragraph
 ```lua
 local Paragraph = Tab1:AddParagraph({"Paragraph", "This is a Paragraph\nSecond Line"})
@@ -91,13 +83,13 @@ local Paragraph = Tab1:AddParagraph({"Paragraph", "This is a Paragraph\nSecond L
     Text = "This is a Dialog",
     Options = {
       {"Confirm", function()
-        
+        print"Confirm"
       end},
       {"Maybe", function()
-        
+        print"Maybe"
       end},
       {"Cancel", function()
-        
+        print"Cancel"
       end}
     }
   })
@@ -117,11 +109,10 @@ Tab1:AddSlider({
   Increase = 1,
   Default = 16,
   Callback = function(Value)
-  
+  print(Value)
   end
 })
 ```
-
 ## Dropdown
 ```lua
 local Dropdown = Tab1:AddDropdown({
@@ -135,7 +126,6 @@ local Dropdown = Tab1:AddDropdown({
   end
 })
 ```
-
 ## Textbox
 ```lua
 Tab1:AddTextBox({
@@ -143,7 +133,7 @@ Tab1:AddTextBox({
   Description = "1 Item on 1 Server", 
   PlaceholderText = "item only",
   Callback = function(Value)
-    
+    print(Value)
   end
 })
 ```
