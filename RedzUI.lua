@@ -45,6 +45,18 @@ local redzlib = {
 			["Color Theme"] = Color3.fromRGB(150, 0, 255),
 			["Color Text"] = Color3.fromRGB(240, 240, 240),
 			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+		},
+		Red = {
+	                ["Color Hub 1"] = ColorSequence.new({
+		                ColorSequenceKeypoint.new(0.00, Color3.fromRGB(30, 20, 20)),
+		                ColorSequenceKeypoint.new(0.50, Color3.fromRGB(50, 30, 30)),
+		                ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 20, 20))
+	                }),
+	                ["Color Hub 2"] = Color3.fromRGB(40, 20, 20),
+	                ["Color Stroke"] = Color3.fromRGB(60, 30, 30),
+	                ["Color Theme"] = Color3.fromRGB(255, 0, 0),
+	                ["Color Text"] = Color3.fromRGB(240, 220, 220),
+	                ["Color Dark Text"] = Color3.fromRGB(180, 100, 100)
 		}
 	},
 	Info = {
@@ -53,7 +65,7 @@ local redzlib = {
 	Save = {
 		UISize = {550, 380},
 		TabSize = 160,
-		Theme = "Darker"
+		Theme = "Red"
 	},
 	Settings = {},
 	Connection = {},
@@ -503,6 +515,7 @@ local redzlib = {
 			["highlighter"] = "rbxassetid://10723407192",
 			["history"] = "rbxassetid://10723407335",
 			["home"] = "rbxassetid://10723407389",
+			["house"] = "rblxassetid://98276858546258",
 			["hourglass"] = "rbxassetid://10723407498",
 			["icecream"] = "rbxassetid://10723414308",
 			["image"] = "rbxassetid://10723415040",
