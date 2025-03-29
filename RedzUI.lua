@@ -56,7 +56,7 @@ local redzlib = {
 	                ["Color Stroke"] = Color3.fromRGB(40, 40, 40),
 	                ["Color Theme"] = Color3.fromRGB(255, 0, 0),
 	                ["Color Text"] = Color3.fromRGB(240, 220, 220),
-	                ["Color Dark Text"] = Color3.fromRGB(180, 100, 100)
+	                ["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
 		}
 	},
 	Info = {
