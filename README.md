@@ -1,6 +1,6 @@
 ## 🚀 Booting The Libary
 ```lua
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/hunggisreal/LibaryUI/refs/heads/main/RedzUI.lua"))()
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/hunggisreal/LibaryUI/refs/heads/main/RedzLib.lua"))()
 ```
 ## Discord invite
 ```lua
