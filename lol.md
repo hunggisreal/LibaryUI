@@ -31,3 +31,5 @@ local Cmdr = require(ReplicatedStorage:WaitForChild("CmdrClient"))
 Cmdr:SetActivationKeys({ Enum.KeyCode.F2 })
 -- See below for the full API.
 ```
+# 89739659028199 selected
+# 120138943969938 deselected
