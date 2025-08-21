@@ -11,8 +11,9 @@ return function(registry)
 		end
 	end)
 end
+```
+# Register 
 ```luau
--- Register 
 -- This is a script you would create in ServerScriptService, for example.
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Cmdr = require(path.to.Cmdr)
@@ -20,3 +21,13 @@ local Cmdr = require(path.to.Cmdr)
 Cmdr:RegisterDefaultCommands()
 Cmdr:RegisterHooksIn() -- This loads the default set of commands that Cmdr comes with. (Optional)
 -- Cmdr:RegisterCommandsIn(script.Parent.CmdrCommands) -- Register commands from your own folder. (Optional)
+```
+# Client Register
+```luau
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Cmdr = require(ReplicatedStorage:WaitForChild("CmdrClient"))
+
+-- Configurable, and you can choose multiple keys
+Cmdr:SetActivationKeys({ Enum.KeyCode.F2 })
+-- See below for the full API.
+```
